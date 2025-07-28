@@ -111,6 +111,27 @@ int main(){
     } else {
         cout << "Element 10 not found." << endl;
     }
+
+    cout<<endl;
+    cout<<"interators";
+    cout << "Using iterators to print vector elements: ";
+    for (auto it = vec.begin(); it != vec.end(); ++it) {
+        cout << *it << " ";
+    }
+    cout << endl;
+    cout << "Using reverse iterators to print vector elements: ";
+    for (auto it = vec.rbegin(); it != vec.rend(); ++it) {
+        cout << *it << " ";
+    }
+    
+    cout << endl;
+    cout<<"it";
+    for (auto it : vec) 
+    {
+        cout << it << " ";
+    }
+    cout << endl;
+    
     return 0;
 
 }
