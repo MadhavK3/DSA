@@ -67,6 +67,26 @@ int main(){
     for (const auto& elem : vec) {
         cout << elem << " ";
     }
+
+
+    cout << endl;
+    cout << "Swapping vectors." << endl;
+    vector<int> vec2 = {100, 200, 300};
+    cout << "Vector 2 elements: ";
+    for (const auto& elem : vec2) {
+        cout << elem << " ";
+    }
+    cout << endl;
+    vec.swap(vec2); // Swap contents of vec and vec2
+    cout << "After swap, Vector 1 elements: ";
+    for (const auto& elem : vec) {
+        cout << elem << " ";
+    }
+    cout << endl;
+    cout << "After swap, Vector 2 elements: ";
+    for (const auto& elem : vec2) {
+        cout << elem << " ";
+    }
     return 0;
 
 }
