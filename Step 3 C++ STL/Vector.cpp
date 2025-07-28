@@ -87,6 +87,30 @@ int main(){
     for (const auto& elem : vec2) {
         cout << elem << " ";
     }
+
+
+    cout << endl;
+    cout << "Sorting vector." << endl;
+    sort(vec.begin(), vec.end()); // Sort the vector
+    cout << "Sorted Vector elements: ";
+    for (const auto& elem : vec) {
+        cout << elem << " ";
+    }
+    cout << endl;
+    cout << "Reversing vector." << endl;
+    reverse(vec.begin(), vec.end()); // Reverse the vector
+    cout << "Reversed Vector elements: ";
+    for (const auto& elem : vec) {
+        cout << elem << " ";
+    }
+    cout << endl;
+    cout << "Finding an element in vector." << endl;
+    auto it = find(vec.begin(), vec.end(), 10); // Find element 10
+    if (it != vec.end()) {
+        cout << "Element 10 found at index: " << distance(vec.begin(), it) << endl;
+    } else {
+        cout << "Element 10 not found." << endl;
+    }
     return 0;
 
 }
