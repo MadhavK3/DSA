@@ -131,6 +131,34 @@ int main(){
         cout << it << " ";
     }
     cout << endl;
+
+
+    cout<<"erase";
+    vec.erase(vec.begin() + 1); // Erase element at index 1
+    cout << "After erase at index 1: "; 
+    for (const auto& elem : vec) {
+        cout << elem << " ";
+    }
+    cout << endl;
+    vec.erase(vec.begin() + 2, vec.end()); // Erase elements from index 2 to end
+    cout << "After erase from index 2 to end: ";
+    for (const auto& elem : vec) {
+        cout << elem << " ";
+    }
+    cout << endl;
+    vector<int> vec3 = {1, 2, 3, 4, 5};
+    cout << "Vector 3 elements adds in vec 1: ";
+    vec.insert(vec.end(), vec3.begin(), vec3.end()); // Insert elements of vec3 at the end of vec
+    for (const auto& elem : vec) {
+        cout << elem << " ";
+    }
+    cout << endl;
+
+    cout<<"clear";
+    vec.clear(); // Clear the vector
+    cout << "Size after clear: " << vec.size() << endl; // Size after clearing
+    cout << "Is vector empty after clear? " << (vec.empty() ? "Yes" : "No") << endl; // Check if vector is empty after clearing
+
     
     return 0;
 
