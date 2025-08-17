@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int count_digits1(int n)
+int count_digits1(int n)      // Time Complexity: O(1) for log10, O(log n) for division method
 {
     if (n == 0) return 1; // Zero has 1 digit
     if(n < 0) n = -n; // Handle negative numbers
