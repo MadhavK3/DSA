@@ -41,6 +41,10 @@ int main(){
     // we have theorem that GCD(a,b) = GCD(b,a%b) if a > b
 
     cout<<"GCD of "<<n1<<" and "<<n2<<" is (Using Euclidean Method): "<<GCD_Euclidean(n1, n2)<<endl;
+
+    // Time Complexity:
+    // Normal Method: O(min(a,b))
+    // Euclidean Method: O(log(min(a,b)))
     return 0;
 
 }
