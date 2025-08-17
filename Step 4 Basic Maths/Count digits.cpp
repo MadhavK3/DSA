@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-int count_digits1(int n){
+int count_digits1(int n)
+{
     if (n == 0) return 1; // Zero has 1 digit
     if(n < 0) n = -n; // Handle negative numbers
     return log10(abs(n)) + 1; // Use abs for negative numbers
