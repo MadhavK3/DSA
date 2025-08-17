@@ -30,7 +30,11 @@ int main(){
     cout<< "upper bound of 10 is:"<<*upper << endl; // will print 15
     // element in () is calles as key 
     // if not  found any then it will return s.end() which is the address of the place next to last element
-    
+     
+
+    int cnt = s.count(20); // Count the number of occurrences of 20 in the set (will be 1 or 0 since set does not allow duplicates)
+    cout << "Count of 20 in set: " << cnt << endl; // Will
+    cout<<"in set it will be 1 or 0 as set does not allow duplicates"<<endl;
     return 0;
 
 }
