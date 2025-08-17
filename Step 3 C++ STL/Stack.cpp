@@ -9,7 +9,7 @@ int main(){
     st.push(20);
     st.push(30);
     st.emplace(40);  // Faster insertion than push (no copy involved)
-    cout << "Elements in stack after adding: ";
+    cout << "Elements in stack after adding:you can see the last element added first" << endl;
 
     // pop removes the last element added as it is LIFO
     while(!st.empty()) {
