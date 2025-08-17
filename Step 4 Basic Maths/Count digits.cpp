@@ -8,7 +8,7 @@ int count_digits1(int n){
 
 
 int count_digits2(int n) {
-    if (n == 0) return 1; // Zero has 1 digit
+    if (n == 0) return 1;     // Zero has 1 digit
     int count = 0;
     while (n > 0) {
         n /= 10;
