@@ -12,6 +12,7 @@ int reverse_number(int n){
 int main(){
 
     int n;
+    cout << "Enter a number: ";
     cin >> n;
   cout << "Reversed number is: " << reverse_number(n) << endl;  // Output the reversed number
     return 0;
