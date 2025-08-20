@@ -13,13 +13,32 @@ void fibo(int n,int f,int s){
    
    fibo(n-1,s,f+s);
 
-    
+}
+
+int fibonacci(int N){
+   
+   // Base Condition.
+   if(N <= 1)
+   {
+       return N;
+   }
+
+   // Problem broken down into 2 functional calls
+   // and their results combined and returned.
+   int last = fibonacci(N-1);
+   int slast = fibonacci(N-2);
+   
+   return last + slast;
 
 }
+
+
 int main(){
 int n;
 cout<<"Enter No of terms: ";cin>>n;
-fibo(n,1,0);
+//fibo(n,1,0);
+cout<<fibonacci(n)<<endl; // nth term check
+
     
     return 0;
 
